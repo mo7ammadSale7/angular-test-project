@@ -1,0 +1,41 @@
+<div class="details">
+  <div class="head">
+    <div class="image">
+      <img src="{{ apiRoot + person.image }}" alt="" />
+    </div>
+    <div class="desc-haed">
+      <h2>{{ person.name }}</h2>
+      <h3>{{ person.status }}</h3>
+    </div>
+  </div>
+  <hr />
+  <div class="desc">
+    <p><span>Status Description: </span>{{ person.statusDes }}</p>
+    <p><span>Family Number: </span>{{ person.familyNum }}</p>
+    <p><span>Followers Number: </span>{{ person.followersNum }}</p>
+    <hr />
+    <p><span>National ID: </span>{{ person.nationalID }}</p>
+    <p><span>Phone: </span>{{ person.phone }}</p>
+    <p><span>City: </span>{{ person.city }}</p>
+    <p><span>Address: </span>{{ person.address }}</p>
+    <p></p>
+    <p></p>
+    <hr />
+    <p><span>Home Rent: </span>{{ person.homeRent }} L.E</p>
+    <p><span>Finance: </span>{{ person.finance }} L.E</p>
+    <p><span>Finance Src: </span>{{ person.financeSrc }}</p>
+    <hr />
+    <div class="action">
+      <div class="date">
+        <p><span>Created At: </span>{{ person.createdAt | date }}</p>
+        <p><span>Last Update: </span>{{ person.lastUpdate | date }}</p>
+      </div>
+      <div class="btn">
+        <button class="edit" (click)="editPerson(person._id)">Edit</button>
+        <button class="delete" (click)="deletePerson(person._id)">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

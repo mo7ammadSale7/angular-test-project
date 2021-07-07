@@ -1,0 +1,17 @@
+<ng-container *ngFor="let person of persones; let i = index">
+  <div
+    (click)="personDetails(person, i)"
+    class="card"
+    [class.active]="clicked[i]"
+  >
+    <div class="image">
+      <img src="{{ apiRoot + person.image }}" alt="{{ person.name }}" />
+    </div>
+    <div class="desc">
+      <h3>{{ person.name }}</h3>
+      <p>
+        {{ person.statusDes }}
+      </p>
+    </div>
+  </div>
+</ng-container>

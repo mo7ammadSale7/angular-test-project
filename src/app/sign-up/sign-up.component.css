@@ -1,0 +1,102 @@
+input {
+  font-family: "Cairo", sans-serif;
+}
+
+.parent {
+  height: 100vh;
+  background-color: #467d7d;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.modal .image {
+  width: 45%;
+  background-color: #1a535c;
+  background-image: url("../../assets/login.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  border-radius: 10px 0 0 10px;
+}
+
+.modal .form {
+  background-color: #ffba33;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+}
+
+.modal .form .card {
+  margin: 15px auto;
+  width: 60%;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 10px 10px 50px -3px rgba(0, 0, 0, 0.3);
+}
+
+.modal .form .card h1.header {
+  font-size: 16pt;
+  font-weight: 700;
+  color: #1a535c;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px 0 rgb(0 44 62 / 4%), 0 8px 16px 0 rgb(0 44 62 / 4%);
+}
+
+.modal .form .card .body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .form .card .body input {
+  margin: 10px 20px;
+  padding: 12px;
+  font-size: 12pt;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 5px;
+}
+
+.modal .form .card .body input::placeholder {
+  color: #aaa;
+}
+
+.modal .form .card .body input[type="submit"] {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: #1a535c;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 14pt;
+  cursor: pointer;
+}
+
+.modal .form .transbort {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal .form .transbort p {
+  font-weight: 600;
+  font-size: 14pt;
+  color: #fff;
+}
+
+.modal .form .transbort a {
+  text-decoration: none;
+  color: #1a535c;
+  font-weight: 700;
+}

@@ -1,0 +1,28 @@
+<app-header></app-header>
+<section class="home">
+  <div class="container">
+    <div class="head">
+      <div class="filter">
+        <label for="search">Search: </label>
+        <input
+          type="text"
+          id="search"
+          placeholder="Search In Person List ..."
+          [(ngModel)]="listFilter"
+        />
+      </div>
+      <a [routerLink]="['/add']">Add Person</a>
+    </div>
+    <div class="main">
+      <div class="list">
+        <app-person-list
+          [persones]="persones"
+          (person)="getData($event)"
+        ></app-person-list>
+      </div>
+      <div class="details" *ngIf="person">
+        <app-person-details [person]="person"></app-person-details>
+      </div>
+    </div>
+  </div>
+</section>

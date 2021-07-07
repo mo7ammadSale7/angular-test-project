@@ -1,0 +1,61 @@
+.home .container .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .container .head .filter {
+  width: 40%;
+}
+
+.home .container .head .filter label {
+  font-size: 14pt;
+  font-weight: 600;
+  color: #1a535c;
+  margin-right: 10px;
+}
+
+.home .container .head .filter input {
+  width: 85%;
+  font-size: 12pt;
+  padding: 8px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #aaa;
+}
+
+.home .container .head a {
+  text-align: center;
+  text-decoration: none;
+  width: 55%;
+  padding: 6px;
+  background-color: #1a535c;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 14pt;
+  cursor: pointer;
+}
+
+.home .container .main {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.home .container .main .list {
+  width: 40%;
+}
+
+.home .container .main .details {
+  height: 95vh;
+  position: sticky;
+  top: 2%;
+  width: 55%;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 20px 20px rgb(0 55 75 / 4%), 0 0 50px rgb(0 55 75 / 4%);
+}

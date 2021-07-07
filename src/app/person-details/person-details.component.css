@@ -1,0 +1,75 @@
+.details hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.details .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details .image {
+  padding: 3px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  display: inline-block;
+  display: flex;
+}
+
+.details .image img {
+  border-radius: 50%;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.details .head h2 {
+  font-size: 16pt;
+  font-weight: 600;
+  text-align: center;
+}
+
+.details .head h3 {
+  font-size: 14pt;
+  font-weight: 600;
+  text-align: center;
+}
+
+.details .desc p span {
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.details .desc .action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details .desc .action .btn button {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  font-size: 12pt;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.details .desc .action .btn button.edit {
+  background-color: #ffba33;
+}
+
+.details .desc .action .btn button.edit:hover {
+  background-color: #e89123;
+}
+
+.details .desc .action .btn button.delete {
+  color: #fff;
+  background-color: #467d7d;
+}
+
+.details .desc .action .btn button.delete:hover {
+  background-color: #1a535c;
+}

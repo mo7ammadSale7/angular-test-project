@@ -1,0 +1,29 @@
+<div class="parent">
+  <div class="modal">
+    <div class="image"></div>
+    <div class="form">
+      <div class="card">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <h1 class="header">Login</h1>
+          <div class="body">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              formControlName="email"
+            />
+            <input
+              type="password"
+              placeholder="Enter Your Password"
+              formControlName="password"
+            />
+            <input type="submit" value="Login" />
+          </div>
+        </form>
+      </div>
+      <div class="transbort">
+        <p>Don’t have an account yet?</p>
+        <a [routerLink]="['/signup']">Create an account</a>
+      </div>
+    </div>
+  </div>
+</div>

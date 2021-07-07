@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  background-color: #fff;
+  margin: 20px 0;
+  box-shadow: 0 20px 20px rgb(0 55 75 / 4%), 0 0 50px rgb(0 55 75 / 4%);
+  transition: all 0.4s ease 0s;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card:hover,
+.card.active {
+  box-shadow: 0 15px 30px 0 rgb(0 0 0 / 11%), 0 5px 15px 0 rgb(0 0 0 / 8%);
+  background-color: #ffba33;
+}
+
+.card .image img {
+  height: 100%;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.card .desc {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.card .desc h3 {
+  font-size: 14pt;
+  font-weight: 600;
+}

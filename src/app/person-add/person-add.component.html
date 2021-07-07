@@ -1,0 +1,93 @@
+<app-header></app-header>
+<section class="home">
+  <div class="container">
+    <div class="card">
+      <form [formGroup]="personAddForm" (ngSubmit)="onSubmit()">
+        <h1 class="header">Add Person</h1>
+        <div class="body">
+          <input
+            type="text"
+            placeholder="Enter Person Name"
+            formControlName="name"
+          />
+          <input
+            type="text"
+            placeholder="Enter Person Status"
+            formControlName="status"
+          />
+          <div class="group">
+            <label for="image">Person Image: </label>
+            <input
+              type="file"
+              id="image"
+              formControlName="image"
+              (change)="onFileChange($event)"
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Enter Person Status Description"
+            formControlName="statusDes"
+          />
+          <hr />
+
+          <div class="group">
+            <input
+              type="number"
+              placeholder="Enter Person Family Numbers"
+              formControlName="familyNum"
+            />
+            <input
+              type="number"
+              placeholder="Enter Person Followers Number"
+              formControlName="followersNum"
+            />
+          </div>
+          <div class="group">
+            <input
+              type="number"
+              placeholder="Enter Person National ID"
+              formControlName="nationalID"
+            />
+            <input
+              type="number"
+              placeholder="Enter Person Phone Number"
+              formControlName="phone"
+            />
+          </div>
+          <div class="group">
+            <input
+              type="text"
+              placeholder="Enter Person City"
+              formControlName="city"
+            />
+            <input
+              type="text"
+              placeholder="Enter Person Address"
+              formControlName="address"
+            />
+          </div>
+          <div class="group">
+            <input
+              type="number"
+              placeholder="Enter Person Home Rent"
+              formControlName="homeRent"
+            />
+            <input
+              type="number"
+              placeholder="Enter Person Finance"
+              formControlName="finance"
+            />
+          </div>
+          <hr />
+          <input
+            type="text"
+            placeholder="Enter Person Finance Src"
+            formControlName="financeSrc"
+          />
+          <input type="submit" value="Add Person" />
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

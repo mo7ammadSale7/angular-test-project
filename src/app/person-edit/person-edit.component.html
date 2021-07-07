@@ -1,0 +1,109 @@
+<app-header></app-header>
+<section class="home">
+  <div class="container">
+    <div class="card">
+      <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <h1 class="header">Edit Person => {{ person.name }}</h1>
+        <div class="body">
+          <input
+            type="text"
+            placeholder="Enter Person Name"
+            [(ngModel)]="person.name"
+            [value]="person.name"
+            name="name"
+          />
+          <input
+            type="text"
+            placeholder="Enter Person Status"
+            [(ngModel)]="person.status"
+            [value]="person.status"
+            name="status"
+          />
+
+          <input
+            type="text"
+            placeholder="Enter Person Status Description"
+            [(ngModel)]="person.statusDes"
+            [value]="person.statusDes"
+            name="statusDes"
+          />
+          <hr />
+
+          <div class="group">
+            <input
+              type="number"
+              placeholder="Enter Person Family Numbers"
+              [(ngModel)]="person.familyNum"
+              [value]="person.familyNum"
+              name="familyNum"
+            />
+            <input
+              type="number"
+              placeholder="Enter Person Followers Number"
+              [(ngModel)]="person.followersNum"
+              [value]="person.followersNum"
+              name="followersNum"
+            />
+          </div>
+          <div class="group">
+            <input
+              type="number"
+              placeholder="Enter Person National ID"
+              [(ngModel)]="person.nationalID"
+              [value]="person.nationalID"
+              name="nationalID"
+            />
+            <input
+              type="number"
+              placeholder="Enter Person Phone Number"
+              [(ngModel)]="person.phone"
+              [value]="person.phone"
+              name="phone"
+            />
+          </div>
+          <div class="group">
+            <input
+              type="text"
+              placeholder="Enter Person City"
+              [(ngModel)]="person.city"
+              [value]="person.city"
+              name="city"
+            />
+            <input
+              type="text"
+              placeholder="Enter Person Address"
+              [(ngModel)]="person.address"
+              [value]="person.address"
+              name="address"
+            />
+          </div>
+          <div class="group">
+            <input
+              type="number"
+              placeholder="Enter Person Home Rent"
+              [(ngModel)]="person.homeRent"
+              [value]="person.homeRent"
+              name="homeRent"
+            />
+            <input
+              type="number"
+              placeholder="Enter Person Finance"
+              [(ngModel)]="person.finance"
+              [value]="person.finance"
+              name="finance"
+            />
+          </div>
+          <hr />
+          <input
+            type="text"
+            placeholder="Enter Person Finance Src"
+            [(ngModel)]="person.financeSrc"
+            [value]="person.financeSrc"
+            name="financeSrc"
+          />
+          <input type="submit" value="Edit Person" />
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
